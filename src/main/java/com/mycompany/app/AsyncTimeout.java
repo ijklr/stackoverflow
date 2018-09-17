@@ -15,8 +15,6 @@ public class AsyncTimeout {
             }
             return "from async in func1";
         });
-
-
         return "I am func1";
     }
 

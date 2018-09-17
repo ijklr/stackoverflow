@@ -74,7 +74,6 @@ public class TopN {
     return returnVal;
   }
 
-
   public List<String> getTopN1(final Map<String, Double> map, int limit) {
     // Creating priority queue with size limit
     PriorityQueue<Entry<String, Double>> pq = new PriorityQueue<>(limit, Entry.comparingByValue());
@@ -91,7 +90,6 @@ public class TopN {
     Collections.reverse(answer);
     return answer;
   }
-
 
   public List<String> getTopN2(final Map<String, Double> map, int limit) {
     return map.entrySet().stream()
